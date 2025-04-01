@@ -19,7 +19,7 @@ document.querySelectorAll('.audit-btn').forEach(button => {
       </head>
       <body>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeX_pM6cansnFn8dwA_AJIE9kMpojDfKepY5_a0N2TPQWuC5A/viewform?embedded=true" 
-                width="640" height="2150" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                width="1000" height="2150" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </body>
       </html>
     `);
