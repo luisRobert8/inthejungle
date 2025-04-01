@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Topica Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <div class="logo"></div>
+    
+      <a href="javascript:void(0)" class="audit-btn" onclick="redirectToForm()">Get Free Audit</a>
+    </div>
+  </nav>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#resources">Resources</a>
+    <a href="javascript:void(0)" class="audit-btn" onclick="redirectToForm()">Get Free Audit</a>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Topica Marketing</h1>
+    <p class="tagline">Driving Visibility in the Age of AI</p>
+    <p>We help businesses dominate in AI-Driven searches, boost visibility, be seen, heard, and recommended by AI.</p>
+    <button class="audit-btn" onclick="redirectToForm()">Get Your Free Website Audit Now for a Limited Time</button>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <h3>The Future of Search</h3>
+    <p>With AI Search optimization, your business will be shown to the right people, ensuring you're always on top of relevant AI Search queries. We create strategies that will amplify how AI ranks your business, what it knows about you, and when to show it to the right people.</p>
+    
+    <h3>How it Works</h3>
+    <p><strong>Audit</strong> - We assess your visibility to AI, what it knows about you, and what it doesn’t know about you.</p>
+    <p><strong>Strategy</strong> - We create a strategy to drive results, improve visibility to AI, fill gaps of missing knowledge, and change any incorrect information. This helps you get ranked higher by AI Search Engines.</p>
+    <p><strong>Ongoing Optimization</strong> - AI is fast-moving and ever-changing. What works now may not work in a few months. We ensure you stay up to date and ahead of the curve.</p>
+    <p><strong>Results</strong> - AI is here to stay. This is an opportunity for you to drive traffic, engagement, and sales by improving your AI visibility.</p>
+
+    <button class="audit-btn" onclick="redirectToForm()">Get Your Free Website Audit Now for a Limited Time</button>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <p>Here are some short articles made by us for you, aimed at sharing insight and our opinions.</p>
+    <div class="pdfs-links">
+     <p><a href="pdfs/Key_Differences_Between_AI_Search_and_Traditional_Search_Engine.pdf" download="Key_Differences_Between_AI_Search_and_Traditional_Search_Engine.pdf">
+       📄 Download: Key Differences Between AI Search and Traditional Search
+     </a><p>
+      <p><a href="pdfs/How_is_AI_Transforming_Business_Visibility.pdf" download="How_is_AI_Transforming_Business_Visibility.pdf">
+        📄 Download: How is AI Transforming Business Visibility
+      </a></p>
+
+    </div>
+    <button class="audit-btn" onclick="redirectToForm()">Get Your Free Website Audit Now for a Limited Time</button>
+  </section>
+
+  <!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>We use cookies to enhance your experience. By clicking 'Accept', you agree to our use of cookies. View our <a href="#privacy">Privacy Policy</a> for more details.</p>
+  <button id="accept-cookies">Accept</button>
+  <button id="decline-cookies">Decline</button>
+</div>
+
+<style>
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #19a28e;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.cookie-banner p {
+  margin: 0;
+}
+.cookie-banner button {
+  margin-left: 10px;
+  background-color: #fff;
+  color: #19a28e;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #16a085;
+  color: #fff;
+}
+</style>
+
+<script>
+document.getElementById('accept-cookies').onclick = function() {
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookie-banner').style.display = 'none';
+};
+
+document.getElementById('decline-cookies').onclick = function() {
+  localStorage.setItem('cookiesAccepted', 'false');
+  document.getElementById('cookie-banner').style.display = 'none';
+};
+
+// Check for consent
+window.onload = function() {
+  const consent = localStorage.getItem('cookiesAccepted');
+  if (consent === 'true' || consent === 'false') {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+};
+</script>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      Contact: luis@topicamarketing.com
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
