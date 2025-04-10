@@ -22,55 +22,72 @@
       "@type": "ProfessionalService",
       "name": "Topica Marketing",
       "url": "https://www.topicamarketing.com",
-      "description": "Topica Marketing helps businesses dominate in AI-Driven searches, boost visibility, and be recommended by AI assistants.",
+      "description": "Topica Marketing specializes in helping B2C businesses dominate in AI-driven search results, improve visibility, be recommended by AI/LLM assistants and other automated AI search systems.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "London",
         "addressCountry": "UK"
       },
       "email": "contact@topicamarketing.com",
-      "areaServed": "GB",
-
+      "areaServed": "*",
       "founder": {
         "@type": "Person",
-        "name": "Luis Charles"
-    
+        "name": "Luis Charles",
+        "sameAs": "https://www.linkedin.com/in/luisracharles" 
+      },
       "serviceType": [
         "AI Search Optimization",
         "AI Visibility Audit",
         "AI Ranking Strategy",
-        "Generative Search optimization"
-        "LLM Search optimization"
+        "Generative Search Optimization",
+        "LLM Search Optimization"
+        "Marketing Consulting"
       ],
-      "hasOfferCatalog": {
+      "offers": {
         "@type": "OfferCatalog",
-        "name": "Services",
+        "name": "Marketing Consulting Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Free AI Visibility Audit"
-            }
+            "name": "Free AI Visibility Audit",
+            "priceCurrency": "GBP",
+            "price": "0",
+            "eligibleRegion": "*",
+            "url": "https://www.topicamarketing.com",
+            "description": "A free audit to assess your business’s AI visibility and provide actionable insights."
           },
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI Search Optimization Plan"
-            }
+            "name": "AI Search Optimization Consulation + Strategy",
+            "priceCurrency": "GBP",
+            "price": "1000",
+            "priceType": "Minimum"
+            "eligibleRegion": "*",
+            "url": "https://www.topicamarketing.com",
+            "description": "A tailored strategy to optimize your business's presence in AI-driven searches."
           },
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Ongoing AI Strategy and Optimization"
-            }
+            "name": "Ongoing AI Strategy and Optimization",
+            "priceCurrency": "GBP",
+            "price": "Negotiated",
+            "priceType": "Custom"
+            "eligibleRegion": "*",
+            "url": "https://www.topicamarketing.com",
+            "description": "Continuous optimization to ensure your business stays ahead in AI search results."
           }
         ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/topica-marketing/"
+      ],
+      "mainEntityOfPage": "https://www.topicamarketing.com",
+      "potentialAction": {
+        "@type": "Action",
+        "name": "Get Your Free AI Website Audit",
+        "target": ""https://docs.google.com/forms/d/e/1FAIpQLSeX_pM6cansnFn8dwA_AJIE9kMpojDfKepY5_a0N2TPQWuC5A/viewform"
       }
     }
-  }
     </script>
     
   <link rel="stylesheet" href="styles.css" />
@@ -99,7 +116,7 @@
   <section id="home">
     <h1>Topica Marketing</h1>
     <p class="tagline">Driving Visibility in the Age of AI</p>
-    <p>We help businesses dominate in AI-Driven searches, boost visibility, be seen, heard, and recommended by AI.</p>
+    <p>We help B2C businesses dominate in LLM and AI-Driven searches, boost visibility, be seen, heard, and recommended by AI.</p>
     <button class="audit-btn" onclick="redirectToForm()">Get Your Free Website Audit Now for a Limited Time</button>
   </section>
 
@@ -107,11 +124,11 @@
   <section id="about">
     <h2>About Us</h2>
     <h3>The Future of Search</h3>
-    <p>With AI Search optimization, your business will be shown to the right people, ensuring you're always on top of relevant AI Search queries. We create strategies that will amplify how AI ranks your business, what it knows about you, and when to show it to the right people.</p>
+    <p>With AI Search optimisation, you ensure that your business is ranked in relevant AI search queries, targeted to the right audience. We create strategies that will amplify how AI ranks your business, what it knows about your business and when to show it to the right people.</p>
     
     <h3>How it Works</h3>
-    <p><strong>Audit</strong> - We assess your visibility to AI, what it knows about you, and what it doesn’t know about you.</p>
-    <p><strong>Strategy</strong> - We create a strategy to drive results, improve visibility to AI, fill gaps of missing knowledge, and change any incorrect information. This helps you get ranked higher by AI Search Engines.</p>
+    <p><strong>Audit</strong> - We assess your visibility to AI, what it knows about you, what it doesn’t know about you, any misconceptions that it may have. We access how highly you're ranked and what will improve your ranking. We access what queries you're currently ranked or shown in, we access who AI is showing you to and whether that is your target audience. </p>
+    <p><strong>Strategy</strong> - We create a strategy to drive results, improve visibility, fill gaps of missing knowledge, change any incorrect information, which specific areas need improvement in order to rank higher and what them improvements would be. This helps your business get ranked higher by AI Search Engines.</p>
     <p><strong>Ongoing Optimization</strong> - AI is fast-moving and ever-changing. What works now may not work in a few months. We ensure you stay up to date and ahead of the curve.</p>
     <p><strong>Results</strong> - AI is here to stay. This is an opportunity for you to drive traffic, engagement, and sales by improving your AI visibility.</p>
 
@@ -197,19 +214,19 @@ window.onload = function() {
   <h2>Frequently Asked Questions</h2>
   <div class="faq-item">
     <h3>Why should I care about AI search when I already rank on Google?</h3>
-    <p>AI Search is already integrated into Google through AI Overviews, the leading search engine platform. When you search for something on Google you're no longer shown a website as the first result, you're shown an AI answer. Other technologies like ChatGPT Search, Perplexity, Claude and others are growing at rapid pace and a number of users are even saying they use them more than Google or have stopped using Google completely.</p>
+    <p>Google is already integrating AI into their search engine platform, this is done through AI Overviews and other AI technologies we don't see behind the scenes so their technology is changing and it's crucial that you keep up. When you search for something on Google you're no longer shown a website as the first result, you're shown an AI answer. Other technologies like ChatGPT Search, Perplexity, Claude and others are growing at rapid pace and a number of users are even saying they use them more than Google or have stopped using Google completely.</p>
   </div>
   <div class="faq-item">
     <h3>What kinds of businesses benefit most from this?</h3>
-    <p>This is best for B2C businesses operating in a specific niche or have clear distictions compared to other businesses, due to the natural language processing of the AI models, users can be more specific about what they're searching for examples: "restaurants in a specific location that have large outdoor seating, vast vegetarian menu and free wifi", "A traveler looking for a pet friendly hotel in Paris within walking distance from the Eiffel Tower", "A shopper looking for a brown leather jacket under £200, available in a size M from a B corp" AI Search gives more power to businesses to really outline what makes them different and be more visible to target customer.</p>
+    <p>This is best for B2C businesses operating in a specific niche or have clear distictions compared to other businesses in the industry, due to the natural language processing of the AI models, users can be more specific about what they're searching for examples: "restaurants in a specific location that have large outdoor seating, vast vegetarian menu and free wifi", "A traveler looking for a pet friendly hotel in Paris within walking distance from the Eiffel Tower", "A shopper looking for a brown leather jacket under £200, available in a size M from a B corp" AI Search gives more power to businesses to really outline what makes them different from the rest and be more visible to target customer.</p>
   </div>
   <div class="faq-item">
     <h3>How is this different from traditional SEO?</h3>
-    <p>I'll outline one difference, tradtional SEO relies largely on keywords to match what users are searching for, AI search uses intent, it's aim is to understand what the user is searching for and provide answers that best match the goal of the question.</p>
+    <p>I'll outline one difference, tradtional SEO relies largely on keywords to match what users are searching for, AI search uses intent, it's aim is to understand what the user is searching for and provide answers that best match the goal of the question not just linking the keywords to one another.</p>
   </div>
   <div class="faq-item">
     <h3>What’s the process after I book a free audit?</h3>
-    <p>1) You book. 2) We do an analysis of your website. 3) You get a tailored breakdown based on the analysis. 4) You will have the option to go further with a full consulation which includes a more in depth analysis of your website, an analysis of your whole online presense, what AI knows about you, who it's suggesting you to and how its affecting your visibiliy, a strategic plan to improve what AI knows about you and how to improve visibility.</p>
+    <p>1) You book. 2) We do an analysis of your website. 3) You get a tailored breakdown based on the analysis. 4) You will have the option to go further with a full consulation which includes a more in depth analysis of your website, an analysis of everything affecting your visibility and ranking, what AI knows about you, who it's suggesting you to and how its affecting your visibiliy, a strategic plan to improve what AI knows about your business and how to improve visibility.</p>
   </div>
   <div class="faq-item">
     <h3>How much does it cost if I decide to go ahead after the audit?</h3>
