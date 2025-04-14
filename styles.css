@@ -53,7 +53,7 @@ h1, h2, p {
 }
 
 /* About Us Section */
-#about {
+#services {
   background-color: #203162;
   padding: 60px 20px;
   border-radius: 10px;
@@ -62,19 +62,19 @@ h1, h2, p {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-#about h2 {
+#services h2 {
   color: #19a28e;
   margin-bottom: 30px;
 }
 
-#about h3 {
+#services h3 {
   color: #fff;
   font-size: 24px;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-#about p {
+#services p {
   font-size: 16px;
   color: #ccc;
   line-height: 1.6;
@@ -288,7 +288,7 @@ footer {
   }
 
   /* About section */
-  #about {
+  #services {
     padding: 40px 15px;
   }
 
